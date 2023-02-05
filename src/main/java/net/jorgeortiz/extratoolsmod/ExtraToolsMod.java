@@ -16,6 +16,7 @@ public class ExtraToolsMod {
     public static final String MOD_ID = "extratoolsmod";
     private static final Logger LOGGER = LogUtils.getLogger();
 
+    //Very Important Comment
     public ExtraToolsMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
