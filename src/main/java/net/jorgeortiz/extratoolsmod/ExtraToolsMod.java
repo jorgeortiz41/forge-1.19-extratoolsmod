@@ -1,6 +1,7 @@
 package net.jorgeortiz.extratoolsmod;
 
 import com.mojang.logging.LogUtils;
+import net.jorgeortiz.extratoolsmod.item.ModItems;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -19,6 +20,8 @@ public class ExtraToolsMod {
     //Very Important Comment
     public ExtraToolsMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModItems.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
